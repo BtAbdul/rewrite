@@ -15,13 +15,13 @@ plugins {
 
 android {
     namespace = "org.cosmicide.rewrite"
-    compileSdk = 34
+    compileSdk = 33
 
     defaultConfig {
         val commit = getGitCommit()
         applicationId = "org.cosmicide.rewrite"
-        minSdk = 26
-        targetSdk = 34
+        minSdk = 21
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0-$commit"
         buildConfigField("String", "GIT_COMMIT", "\"$commit\"")
